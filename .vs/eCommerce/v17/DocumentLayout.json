@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\Projetos\\eCommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|e:\\projetos\\ecommerce\\ecommerce.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|e:\\projetos\\ecommerce\\ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|e:\\projetos\\ecommerce\\ecommerce.api\\repositories\\userrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\userrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|e:\\projetos\\ecommerce\\ecommerce.api\\repositories\\iuserrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\iuserrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,6 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "eCommerce.API\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\Projetos\\eCommerce\\eCommerce.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "eCommerce.API\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAiwCkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T09:47:56.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.API\\Program.cs",
+              "RelativeDocumentMoniker": "eCommerce.API\\Program.cs",
+              "ToolTip": "E:\\Projetos\\eCommerce\\eCommerce.API\\Program.cs",
+              "RelativeToolTip": "eCommerce.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T09:29:51.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepos.cs",
+              "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.API\\Repositories\\UserRepos.cs",
+              "RelativeDocumentMoniker": "eCommerce.API\\Repositories\\UserRepos.cs",
+              "ToolTip": "E:\\Projetos\\eCommerce\\eCommerce.API\\Repositories\\UserRepos.cs",
+              "RelativeToolTip": "eCommerce.API\\Repositories\\UserRepos.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T09:12:09.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IUserRepos.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.API\\Repositories\\IUserRepos.cs",
               "RelativeDocumentMoniker": "eCommerce.API\\Repositories\\IUserRepos.cs",
@@ -47,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Department.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\Department.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\Department.cs",
@@ -59,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "SendAddress.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\SendAddress.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\SendAddress.cs",
@@ -71,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Contact.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\Contact.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\Contact.cs",
@@ -83,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\User.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\User.cs",
