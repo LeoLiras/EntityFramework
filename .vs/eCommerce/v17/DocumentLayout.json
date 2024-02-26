@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Projetos\\eCommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|e:\\projetos\\ecommerce\\ecommerce.api\\repositories\\iuserrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4FDB87A-B3A6-4B0E-8338-B4CB7CCABA42}|eCommerce.API\\eCommerce.API.csproj|solutionrelative:ecommerce.api\\repositories\\iuserrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F85F222-AEF9-4512-954D-9B7C162A1FF8}|eCommerce.Models\\eCommerce.Models.csproj|e:\\projetos\\ecommerce\\ecommerce.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F85F222-AEF9-4512-954D-9B7C162A1FF8}|eCommerce.Models\\eCommerce.Models.csproj|solutionrelative:ecommerce.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "IUserRepos.cs",
+              "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.API\\Repositories\\IUserRepos.cs",
+              "RelativeDocumentMoniker": "eCommerce.API\\Repositories\\IUserRepos.cs",
+              "ToolTip": "E:\\Projetos\\eCommerce\\eCommerce.API\\Repositories\\IUserRepos.cs",
+              "RelativeToolTip": "eCommerce.API\\Repositories\\IUserRepos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T09:00:20.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Department.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\Department.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\Department.cs",
@@ -38,12 +55,11 @@
               "RelativeToolTip": "eCommerce.Models\\Department.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T20:40:51.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T20:40:51.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SendAddress.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\SendAddress.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\SendAddress.cs",
@@ -51,12 +67,11 @@
               "RelativeToolTip": "eCommerce.Models\\SendAddress.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T20:29:05.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T20:29:05.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Contact.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\Contact.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\Contact.cs",
@@ -64,21 +79,19 @@
               "RelativeToolTip": "eCommerce.Models\\Contact.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T20:17:05.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T20:17:05.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Projetos\\eCommerce\\eCommerce.Models\\User.cs",
               "RelativeDocumentMoniker": "eCommerce.Models\\User.cs",
               "ToolTip": "E:\\Projetos\\eCommerce\\eCommerce.Models\\User.cs",
               "RelativeToolTip": "eCommerce.Models\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T20:11:25.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T20:11:25.735Z"
             }
           ]
         }
