@@ -34,7 +34,7 @@ namespace eCommerce.API.Migrations
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("DepartmentUser");
+                    b.ToTable("DepartmentUser", (string)null);
                 });
 
             modelBuilder.Entity("eCommerce.Models.Contact", b =>
@@ -59,7 +59,7 @@ namespace eCommerce.API.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("eCommerce.Models.Department", b =>
@@ -76,7 +76,7 @@ namespace eCommerce.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("eCommerce.Models.SendAddress", b =>
@@ -124,7 +124,7 @@ namespace eCommerce.API.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("SendAddresses");
+                    b.ToTable("SendAddresses", (string)null);
                 });
 
             modelBuilder.Entity("eCommerce.Models.User", b =>
@@ -164,7 +164,7 @@ namespace eCommerce.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("DepartmentUser", b =>
