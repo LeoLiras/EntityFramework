@@ -8,10 +8,13 @@ namespace eCommerce.API.Database
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=eCommerce;Integrated Security=True;");
-        }
+        #region Conexão sem ambiente
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=eCommerce;Integrated Security=True;");
+        //}
+        #endregion
 
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contacts { get; set; }
