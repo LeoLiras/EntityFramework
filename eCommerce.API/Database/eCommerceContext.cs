@@ -19,6 +19,13 @@ namespace eCommerce.API.Database
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<SendAddress> SendAddresses { get; set; }
-        public DbSet<Department> Departments { get; set; } 
+        public DbSet<Department> Departments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Department>().HasData(
+                new Department { Id = 1, Name = "IT"}
+                );
+        }
     }
 }
