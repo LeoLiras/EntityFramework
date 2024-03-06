@@ -38,5 +38,14 @@ namespace eCommerce.Models
         public Contact? Contact { get; set; }
         public ICollection<SendAddress>? SendAddresses { get; set; }
         public ICollection<Department>? Departments { get; set; }
+
+        [InverseProperty("Client")]
+        public ICollection<Order>? ClientOrder { get; set; }
+
+        [InverseProperty("Employee")]
+        public ICollection<Order>? EmployeeOrder { get; set; }
+
+        [InverseProperty("Supervisor")]
+        public ICollection<Order>? SupervisorOrder {  get; set; }
     }
 }
