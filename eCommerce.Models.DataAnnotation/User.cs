@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Models
 {
+    [Index(nameof(Email), IsUnique = true, Name = "Email único")]
+    [Index(nameof(Name), nameof(CPF))]
     [Table("TB_USUARIOS")]
     public class User
     {
