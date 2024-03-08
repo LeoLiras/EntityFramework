@@ -32,6 +32,8 @@ namespace eCommerce.Models.FluentAPI
             modelBuilder.Entity<User>().Property(x => x.RG).HasColumnName("REGISTRO_GERAL").HasMaxLength(10).HasDefaultValue("RG-AUSENTE").IsRequired();
             modelBuilder.Entity<User>().Ignore(x => x.Sex);
             modelBuilder.Entity<User>().Property(x => x.Id).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<User>().HasIndex(x => x.CPF).IsUnique().HasFilter("[CPF] is not null" ).HasDatabaseName("CPF Unique");
         }
     } 
 }
