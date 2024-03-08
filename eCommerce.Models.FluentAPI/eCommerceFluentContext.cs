@@ -25,5 +25,13 @@ namespace eCommerce.Models.FluentAPI
         public DbSet<Contact>? Contacts { get; set; }
         public DbSet<SendAddress>? SendAddresses { get; set; }
         public DbSet<Department>? Departments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>().ToTable("TB_USUARIOS");
+            modelBuilder.Entity<User>().Property(x => x.RG).HasColumnName("REGISTRO_GERAL").HasMaxLength(10).HasDefaultValue("RG-AUSENTE").IsRequired();
+            modelBuilder.Entity<User>().Ignore(x => x.Sex);
+            modelBuilder.Entity<User>().Property(x => x.Id).ValueGeneratedOnAdd();
+        }
     } 
 }
