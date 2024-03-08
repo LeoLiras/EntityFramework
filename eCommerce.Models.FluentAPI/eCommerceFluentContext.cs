@@ -34,6 +34,9 @@ namespace eCommerce.Models.FluentAPI
             modelBuilder.Entity<User>().Property(x => x.Id).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<User>().HasIndex(x => x.CPF).IsUnique().HasFilter("[CPF] is not null" ).HasDatabaseName("CPF Unique");
+
+            modelBuilder.Entity<User>().HasKey(x => new { x.Id, x.CPF });
+
         }
     } 
 }
