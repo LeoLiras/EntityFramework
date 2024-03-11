@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,8 @@ namespace eCommerce.Models
         public string? NomeMae { get; set; }
         public string? RegisterSituation { get; set; }
         public DateTimeOffset RegisterDate { get; set; }
-        public Contact? contact { get; set; }
+        public Contact? Contact { get; set; }
         public ICollection<SendAddress>? SendAddresses { get; set; }
-        public ICollection<Department>? Departments { get; set; }
+        public ICollection<Department>? Departments { get; set; } 
     }
 }
