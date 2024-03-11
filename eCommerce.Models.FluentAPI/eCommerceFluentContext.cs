@@ -42,6 +42,8 @@ namespace eCommerce.Models.FluentAPI
             modelBuilder.Entity<User>().HasMany(x => x.SendAddresses).WithOne(x => x.User).HasForeignKey(x => x.UserId);
             modelBuilder.Entity<User>().HasMany(x => x.Departments).WithMany(x => x.Users);
 
+            modelBuilder.Entity<User>().Property(x => x.RG).IsRequired().HasMaxLength(15);
+
         }
     } 
 }
