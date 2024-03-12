@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerceOffice
+namespace eCommerceOffice.Models
 {
     public class Employee
     {
 
-        public int Id { get; set; } 
+        public int Id { get; set; }
         public string Name = null!;
-        public ICollection<Employee>? Employees { get; set;}
+        public ICollection<Employee>? Employees { get; set; }
         public ICollection<Sectors>? Sectors { get; set; }
     }
 }
