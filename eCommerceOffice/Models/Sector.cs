@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace eCommerceOffice.Models
 {
-    public class Sectors
+    public class Sector
     {
         public int Id { get; set; }
         public string Name { get; set; }
