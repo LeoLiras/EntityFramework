@@ -11,5 +11,6 @@ namespace eCommerceOffice
 
         public int Id { get; set; } 
         public string Name = null!;
+        public ICollection<Employee>? Employees { get; set;}
     }
 }

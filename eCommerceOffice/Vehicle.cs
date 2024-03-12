@@ -12,6 +12,7 @@ namespace eCommerceOffice
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string Identification { get; set; } = null!;
+        public ICollection<Vehicle>? Vehicles { get; set; }
 
     }
 }
