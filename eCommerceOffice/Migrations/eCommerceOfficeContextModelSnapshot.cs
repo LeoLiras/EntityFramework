@@ -107,43 +107,43 @@ namespace eCommerceOffice.Migrations
                         {
                             SectorId = 1,
                             EmployeeId = 1,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4313), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5444), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 2,
                             EmployeeId = 2,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4343), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5473), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 3,
                             EmployeeId = 3,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4345), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5475), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 4,
                             EmployeeId = 4,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4347), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5477), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 4,
                             EmployeeId = 5,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4349), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5478), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 3,
                             EmployeeId = 6,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4350), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5480), new TimeSpan(0, -3, 0, 0, 0))
                         },
                         new
                         {
                             SectorId = 2,
                             EmployeeId = 7,
-                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 1, 22, 82, DateTimeKind.Unspecified).AddTicks(4352), new TimeSpan(0, -3, 0, 0, 0))
+                            Created = new DateTimeOffset(new DateTime(2024, 3, 13, 6, 12, 54, 583, DateTimeKind.Unspecified).AddTicks(5481), new TimeSpan(0, -3, 0, 0, 0))
                         });
                 });
 
