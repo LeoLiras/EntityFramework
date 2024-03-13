@@ -23,9 +23,42 @@ namespace eCommerceOffice
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            #region EmployeeSector
             modelBuilder.Entity<EmployeeSector>().HasKey(x => new { x.SectorId, x.EmployeeId });
-            modelBuilder.Entity<Employee>().HasMany(x=>x.EmployeesSectors).WithOne(x=>x.Employee).HasForeignKey(x=>x.EmployeeId);
-            modelBuilder.Entity<Sector>().HasMany(x=>x.EmployeesSectors).WithOne(x=>x.Sector).HasForeignKey(x=>x.SectorId);
+            modelBuilder.Entity<EmployeeSector>().HasOne(x => x.Employee).WithMany(x=>x.EmployeesSectors).HasForeignKey(x => x.EmployeeId);
+            modelBuilder.Entity<EmployeeSector>().HasOne(x => x.Sector).WithMany(x => x.EmployeesSectors).HasForeignKey(x => x.SectorId);
+            //modelBuilder.Entity<Employee>().HasMany(x=>x.EmployeesSectors).WithOne(x=>x.Employee).HasForeignKey(x=>x.EmployeeId);
+            //modelBuilder.Entity<Sector>().HasMany(x=>x.EmployeesSectors).WithOne(x=>x.Sector).HasForeignKey(x=>x.SectorId);
+            #endregion
+
+            #region Seeds
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee() { Id = 1, Name = "Mari"},
+                new Employee() { Id = 2, Name = "João" },
+                new Employee() { Id = 3, Name = "Pedro" },
+                new Employee() { Id = 4, Name = "Vanessa" },
+                new Employee() { Id = 5, Name = "Thiago" },
+                new Employee() { Id = 6, Name = "Vivian" },
+                new Employee() { Id = 7, Name = "Renalla" }
+            );
+
+            modelBuilder.Entity<Sector>().HasData(
+                new Sector() { Id = 1, Name = "IT"},
+                new Sector() { Id = 2, Name = "Logistica" },
+                new Sector() { Id = 3, Name = "Financeiro" },
+                new Sector() { Id = 4, Name = "ADM" }
+            );
+
+            modelBuilder.Entity<EmployeeSector>().HasData(
+                new EmployeeSector() { SectorId = 1, EmployeeId = 1},
+                new EmployeeSector() { SectorId = 2, EmployeeId = 2 },
+                new EmployeeSector() { SectorId = 3, EmployeeId = 3 },
+                new EmployeeSector() { SectorId = 4, EmployeeId = 4 },
+                new EmployeeSector() { SectorId = 4, EmployeeId = 5 },
+                new EmployeeSector() { SectorId = 3, EmployeeId = 6 },
+                new EmployeeSector() { SectorId = 2, EmployeeId = 7 }
+            );
+            #endregion
         }
     }
 }
