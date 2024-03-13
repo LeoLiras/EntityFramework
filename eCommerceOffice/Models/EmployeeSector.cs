@@ -11,6 +11,7 @@ namespace eCommerceOffice.Models
 
         public int EmployeeId { get; set; }
         public int SectorId { get; set; }
+        public DateTimeOffset Created {  get; set; }
         public Employee? Employee { get; set; }
         public Sector? Sector { get; set; }
     }
