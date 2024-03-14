@@ -71,6 +71,10 @@ namespace eCommerceOffice
             #region Mapping EF Core 5+
             modelBuilder.Entity<Employee>().HasMany(x => x.Teams).WithMany(x => x.Employees);
             #endregion
+
+            #region Mapping: Employee <=> Vehicle (EF Core 5+)
+            modelBuilder.Entity<Employee>().HasMany(x => x.Vehicles).WithMany(x => x.Employees);
+            #endregion
         }
     }
 }
