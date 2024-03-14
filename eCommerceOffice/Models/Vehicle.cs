@@ -13,6 +13,6 @@ namespace eCommerceOffice.Models
         public string Name { get; set; } = null!;
         public string Identification { get; set; } = null!;
         public ICollection<Employee>? Employees { get; set; }
-
+        public ICollection<EmployeeVehicle>? EmployeesVehicles { get; set; }
     }
 }
