@@ -66,6 +66,14 @@ namespace eCommerceOffice
                 new Team() { Id = 4, Name = "A4" },
                 new Team() { Id = 5, Name = "A5" }
             );
+
+            modelBuilder.Entity<Vehicle>().HasData(
+                new Vehicle() { Id = 1, Name = "Mobi", Identification = "ABC123"},
+                new Vehicle() { Id = 2, Name = "Argo", Identification = "BCA324" },
+                new Vehicle() { Id = 3, Name = "Onix", Identification = "ASD342" },
+                new Vehicle() { Id = 4, Name = "Celta",Identification = "JKL123" },
+                new Vehicle() { Id = 5, Name = "HB20", Identification = "POJ876"}
+            );
             #endregion
 
             #region Mapping EF Core 5+
@@ -73,7 +81,14 @@ namespace eCommerceOffice
             #endregion
 
             #region Mapping: Employee <=> Vehicle (EF Core 5+)
-            modelBuilder.Entity<Employee>().HasMany(x => x.Vehicles).WithMany(x => x.Employees);
+            modelBuilder.Entity<Employee>().
+                HasMany(x => x.Vehicles).
+                WithMany(x => x.Employees).
+                UsingEntity<EmployeeVehicle>(
+                    x => x.HasOne(y => y.Vehicle).WithMany(y => y.EmployeesVehicles).HasForeignKey(y => y.VehicleId),
+                    x => x.HasOne(y => y.Employee).WithMany(y => y.EmployeesVehicles).HasForeignKey(y => y.EmployeeId), 
+                    x => x.HasKey(y =>  new {y.EmployeeId, y.VehicleId})    
+                );
             #endregion
         }
     }
