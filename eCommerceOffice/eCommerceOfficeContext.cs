@@ -53,10 +53,10 @@ namespace eCommerceOffice
                 new EmployeeSector() { SectorId = 1, EmployeeId = 1, Created = DateTimeOffset.Now},
                 new EmployeeSector() { SectorId = 2, EmployeeId = 2, Created = DateTimeOffset.Now },
                 new EmployeeSector() { SectorId = 3, EmployeeId = 3, Created = DateTimeOffset.Now },
-                new EmployeeSector() { SectorId = 4, EmployeeId = 4 ,Created = DateTimeOffset.Now },
-                new EmployeeSector() { SectorId = 4, EmployeeId = 5 ,Created = DateTimeOffset.Now },
-                new EmployeeSector() { SectorId = 3, EmployeeId = 6 ,Created = DateTimeOffset.Now },
-                new EmployeeSector() { SectorId = 2, EmployeeId = 7 ,Created = DateTimeOffset.Now }
+                new EmployeeSector() { SectorId = 4, EmployeeId = 4, Created = DateTimeOffset.Now },
+                new EmployeeSector() { SectorId = 4, EmployeeId = 5, Created = DateTimeOffset.Now },
+                new EmployeeSector() { SectorId = 3, EmployeeId = 6, Created = DateTimeOffset.Now },
+                new EmployeeSector() { SectorId = 2, EmployeeId = 7, Created = DateTimeOffset.Now }
             );
 
             modelBuilder.Entity<Team>().HasData(

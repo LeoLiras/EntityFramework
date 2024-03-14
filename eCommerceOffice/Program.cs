@@ -2,7 +2,7 @@
 using eCommerceOffice.Models;
 using Microsoft.EntityFrameworkCore;
 
-Console.WriteLine("HelloWorld");
+//Console.WriteLine("HelloWorld");
 
 var db = new eCommerceOfficeContext();
 
@@ -13,7 +13,7 @@ var db = new eCommerceOfficeContext();
 
 //    foreach (var emplSec in setor.EmployeesSectors)
 //    {
-//        Console.WriteLine(emplSec.Employee.Name);
+//        Console.WriteLine("- " + emplSec.Employee.Name);
 //    }
 //}
 
@@ -21,7 +21,8 @@ var resTeam = db.Employees!.Include(x => x.Teams);
 foreach (var colab in resTeam)
 {
     Console.WriteLine(colab.Name);
-    foreach(var team in colab.Teams)
+
+    foreach (var team in colab.Teams)
     {
         Console.WriteLine("- " + team.Name);
     }
