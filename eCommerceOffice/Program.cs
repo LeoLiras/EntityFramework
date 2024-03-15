@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 var db = new eCommerceOfficeContext();
 
+#region Many-To-Many for EF Core <= 3.1
 //var res = db.Sectors!.Include(x => x.EmployeesSectors).ThenInclude(x => x.Employee);
 //foreach (var setor in res)
 //{
@@ -16,14 +17,30 @@ var db = new eCommerceOfficeContext();
 //        Console.WriteLine("- " + emplSec.Employee.Name);
 //    }
 //}
+#endregion
 
-var resTeam = db.Employees!.Include(x => x.Teams);
-foreach (var colab in resTeam)
+#region Many-To-Many for EF Core 5+
+//var resTeam = db.Employees!.Include(x => x.Teams);
+//foreach (var colab in resTeam)
+//{
+//    Console.WriteLine(colab.Name);
+
+//    foreach (var team in colab.Teams)
+//    {
+//        Console.WriteLine("- " + team.Name);
+//    }
+//}
+#endregion
+
+#region Many-To-Many + Playload for EF Core 5+
+var emplVehicle = db.Employees!.Include(x => x.EmployeesVehicles)!.ThenInclude(x => x.Vehicle);
+foreach(var empl in emplVehicle)
 {
-    Console.WriteLine(colab.Name);
-
-    foreach (var team in colab.Teams)
+    Console.WriteLine(empl.Name);
+    foreach(var bond in empl.EmployeesVehicles!)
     {
-        Console.WriteLine("- " + team.Name);
+        Console.WriteLine($"- {bond.Vehicle!.Name} ({bond.Vehicle.Identification}): {bond.InitialBondDate}");
     }
 }
+#endregion
+

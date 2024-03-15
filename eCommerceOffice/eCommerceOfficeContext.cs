@@ -12,6 +12,7 @@ namespace eCommerceOffice
     {
         public DbSet<Employee>? Employees { get; set; }
         public DbSet<EmployeeSector> EmployeesSectors { get; set; }
+        public DbSet<EmployeeVehicle> EmployeesVehicles { get; set; }
         public DbSet<Sector>? Sectors { get; set; }
         public DbSet<Team>? Teams { get; set; }
         public DbSet<Vehicle>? Vehicles { get; set; }
